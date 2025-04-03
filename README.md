@@ -2,7 +2,12 @@
 
 A modern, feature-rich calculator web application with a **clean UI, customizable themes, and accessibility features**.
 
-![Calculator Screenshot](./images/calculator_image.png)
+<p align="center">
+  <img src="./images/blue.png" width="200">
+  <img src="./images/green.png" width="200">
+  <img src="./images/purple.png" width="200">
+  <img src="./images/orange.png" width="200">
+</p>
 
 ---
 
