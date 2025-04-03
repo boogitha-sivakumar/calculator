@@ -8,6 +8,10 @@ A modern, feature-rich calculator web application with a **clean UI, customizabl
   <img src="./images/purple.png" width="200" height="350">
   <img src="./images/orange.png" width="200" height="350">
 </p>
+<p align="center">
+  <img src="./images/history.png" width="200" height="350">
+  <img src="./images/settings.png" width="200" height="350">
+</p>
 
 ---
 
