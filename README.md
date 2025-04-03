@@ -3,10 +3,10 @@
 A modern, feature-rich calculator web application with a **clean UI, customizable themes, and accessibility features**.
 
 <p align="center">
-  <img src="./images/blue.png" width="200" height="150">
-  <img src="./images/green.png" width="200" height="150">
-  <img src="./images/purple.png" width="200" height="150">
-  <img src="./images/orange.png" width="200" height="150">
+  <img src="./images/blue.png" width="200" height="350">
+  <img src="./images/green.png" width="200" height="350">
+  <img src="./images/purple.png" width="200" height="350">
+  <img src="./images/orange.png" width="200" height="350">
 </p>
 
 ---
