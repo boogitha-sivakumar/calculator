@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper theme-blue">
+        <!-- Settings Panel -->
+        <div class="settings-panel" id="settings-panel">
+          <h3>Settings</h3>
+          <div class="settings-option">
+            <label for="theme-toggle">Dark Mode</label>
+            <input type="checkbox" id="theme-toggle" class="toggle-switch" />
+          </div>
+          <div class="settings-option">
+            <label for="theme-selector">Theme</label>
+            <select id="theme-selector">
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="orange">Orange</option>
+              <option value="high-contrast">High Contrast</option>
+            </select>
+          </div>
+          <div class="settings-option">
+            <label for="sound-toggle">Sound</label>
+            <input type="checkbox" id="sound-toggle" class="toggle-switch" />
+          </div>
+          <div class="settings-option">
+            <label for="haptic-toggle">Vibration</label>
+            <input type="checkbox" id="haptic-toggle" class="toggle-switch" />
+          </div>
+          <button id="clear-history-btn" class="settings-btn">
+            Clear History
+          </button>
+          <button id="close-settings-btn" class="settings-btn">Close</button>
+        </div>
+
+        <!-- History Panel -->
+        <div class="history-panel" id="history-panel">
+          <h3>
+            History
+            <button
+              id="close-history-btn"
+              class="close-btn"
+              aria-label="Close history"
+            >
+              ×
+            </button>
+          </h3>
+          <div class="history-list" role="list"></div>
+          <button id="clear-history-from-panel-btn" class="settings-btn">
+            Clear History
+          </button>
+        </div>
+
+        <!-- Main Calculator -->
+        <div class="calculator-section">
+          <div class="header">
+            <h2>Calculator</h2>
+            <button id="settings-btn" class="icon-btn" aria-label="Settings">
+              ⚙️
+            </button>
+          </div>
+
+          <section
+            class="screen"
+            aria-live="polite"
+            role="textbox"
+            aria-readonly="true"
+          >
+            0
+          </section>
+
+          <section class="calc-buttons">
+            <div class="calc-button-row">
+              <button class="calc-button function-btn" aria-label="Clear all">
+                C
+              </button>
+              <button class="calc-button function-btn" aria-label="Clear entry">
+                CE
+              </button>
+              <button class="calc-button function-btn" aria-label="Modulo">
+                %
+              </button>
+              <button class="calc-button function-btn" aria-label="Divide">
+                ÷
+              </button>
+            </div>
+            <div class="calc-button-row">
+              <button class="calc-button memory-btn" aria-label="Memory clear">
+                MC
+              </button>
+              <button class="calc-button memory-btn" aria-label="Memory recall">
+                MR
+              </button>
+              <button class="calc-button memory-btn" aria-label="Memory add">
+                M+
+              </button>
+              <button
+                class="calc-button memory-btn"
+                aria-label="Memory subtract"
+              >
+                M-
+              </button>
+            </div>
+            <div class="calc-button-row">
+              <button class="calc-button number-btn" aria-label="Seven">
+                7
+              </button>
+              <button class="calc-button number-btn" aria-label="Eight">
+                8
+              </button>
+              <button class="calc-button number-btn" aria-label="Nine">
+                9
+              </button>
+              <button class="calc-button function-btn" aria-label="Multiply">
+                ×
+              </button>
+            </div>
+            <div class="calc-button-row">
+              <button class="calc-button number-btn" aria-label="Four">
+                4
+              </button>
+              <button class="calc-button number-btn" aria-label="Five">
+                5
+              </button>
+              <button class="calc-button number-btn" aria-label="Six">6</button>
+              <button class="calc-button function-btn" aria-label="Subtract">
+                −
+              </button>
+            </div>
+            <div class="calc-button-row">
+              <button class="calc-button number-btn" aria-label="One">1</button>
+              <button class="calc-button number-btn" aria-label="Two">2</button>
+              <button class="calc-button number-btn" aria-label="Three">
+                3
+              </button>
+              <button class="calc-button function-btn" aria-label="Add">
+                +
+              </button>
+            </div>
+            <div class="calc-button-row">
+              <button class="calc-button number-btn" aria-label="Double zero">
+                00
+              </button>
+              <button class="calc-button number-btn" aria-label="Zero">
+                0
+              </button>
+              <button class="calc-button number-btn" aria-label="Decimal point">
+                .
+              </button>
+              <button class="calc-button equals-btn" aria-label="Equals">
+                =
+              </button>
+            </div>
+            <div class="calc-button-row advanced-row">
+              <button class="calc-button function-btn" aria-label="Change sign">
+                ±
+              </button>
+              <button class="calc-button function-btn" aria-label="Square root">
+                √
+              </button>
+              <button class="calc-button function-btn" aria-label="Backspace">
+                ←
+              </button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+              <button id="history-btn" class="action-btn">
+                <span class="action-btn-icon">📋</span> History
+              </button>
+              <button id="clear-btn" class="action-btn">
+                <span class="action-btn-icon">🗑️</span> Clear All
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
